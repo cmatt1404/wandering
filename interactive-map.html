@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive Map</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    
+
+</head> 
+
+<body>
+   
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">Wander</a>
+            
+            <ul class="navbar__menu">
+                <!-- <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li> -->
+                <li class="navbar__item">
+                    <a href="interactive-map.html" class="navbar__links">Interactive Map</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="sign-up.html" class="navbutton">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<main>
+    <h1>Click on a state to start the adventure</h1>
+    <img id="hovery"  src="../img/map-us.png" usemap="#image-map" width="1293" height="750" >
+
+<map name="image-map">
+    <area  alt="wyoming" title="wyoming" href="grand-teton.html" coords="445,172,573,185,568,288,428,275" shape="poly">
+</map>
+    
+
+    <!-- <img src="map-us.png" usemap="#../img/image-map">
+
+<map name="../img/image-map">
+    <area alt="map of united states" title="" href="" coords="448,169,577,186,569,292,429,276" shape="poly">
+</map> -->
+
+</main>
+
+<footer>
+        
+</footer>
+	<!-- 🔥 1. Enable jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- 🔥 2. Link in RWDImagemap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+	<script>
+		$(document).ready(function(e) {
+			$('img[usemap]').rwdImageMaps();
+			$('area').on('click', function() {
+				alert($(this).attr('alt') + ' clicked');
+			});
+		});
+	</script>
+
+    <script>
+		var image = document.getElementById("hovery");
+		image.onmouseover = function() {
+			image.src = "https://assets.codepen.io/18050/map-us-wyoming.png";
+		}
+		image.onmouseout = function() {
+			image.src = "https://assets.codepen.io/18050/map-us-wyoming-reverse.png";
+		}
+	</script>
+</body>
+</html>

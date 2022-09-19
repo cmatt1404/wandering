@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">Wander</a>
+            
+            <ul class="navbar__menu">
+                <!-- <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li> -->
+                <li class="navbar__item">
+                    <a href="interactive-map.html" class="navbar__links">Interactive Map</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="sign-up.html" class="navbutton">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="grand-teton.html">Grand Teton</a></li>
+            <li><a href="activities.html">Activites</a></li>
+            <li>Biking</li>
+          </ul>
+        <h1>Biking</h1>
+
+
+        <p>There are few things better than biking on long and winding roads, exploring pathways designed for views, and mountain fresh air to fill your lungs. Biking in Grand Teton is an exhilarating experience for both the expert and beginner. With these safety tips and knowing park regulations everyone can have a great time biking in the park.
+        </p>
+        <img src="../img/biking-gt.jpeg" alt="biking in front of grand teton mountain range" width="100%">
+
+
+        <h2>Road Biking</h2>
+        <p>Biking is allowed on all paved roads in Grand Teton as well as the Two Ocean Lake Road and Grassy Lake Road (both gravel).
+
+        The Teton Park Road is closed to vehicles between the Taggart Lake Trailhead and Signal Mountain from November 1-May 1. This section is open to biking when the road is clear of snow but is not plowed during the winter months. The road re-opens to bikes April 1.
+
+        Some roads in the park have only a very narrow shoulder, or lack one altogether. Extreme caution must be used. Ride with the direction of traffic, in a single file line. Be alert for vehicles, wildlife, and other cyclists. See the map below for suggested routes. Be sure to follow park guidelines when biking in the park.
+
+        Biking is not allowed on hiking trails in Grand Teton. For mountain biking opportunities, travel into the Bridger-Teton National Forest. Ask for information about area trails at a bike shop.
+        </p>
+
+        <h2>The Multi-Use Pathway</h2>
+        <p>The multi-use pathway is designed for use by bikes, roller blades, and walkers. The pathway currently extends from the town of Jackson, north to Antelope Flats Road. At Moose Junction the pathway follows the Teton Park Road to the South Jenny Lake area.
+
+          The section of pathway through Grand Teton National Park opens seasonally after snow has melted from the pathway surface and park maintenance workers have swept it. The section of the pathway along the National Elk Refuge from Jackson to Gros Ventre Road is closed from November 1 to April 30 due to elk migration.
+    
+        There is an extensive pathway system through the town of Jackson extending into Teton County. Please visit the Teton County website for maps of the pathway system.
+    
+         Persons with physical disabilities may use other forms of electric and battery operated transportation. The multi-use pathway is closed from dusk to dawn for wildlife and public safety.
+    
+         Pets are not permitted on the park pathway. Guide dogs-used for the sole purpose of aiding a person with physical disability-may travel on the pathway. Ask at a visitor center for suggestions on where to exercise your pet or visit the pets page for a brochure with recommendations and regulations for pets.
+        </p>
+
+        <div>
+            <h2>Comments</h2>
+            <hr>
+            <div class="comment">
+                <h3>Kenny Adams: 🌲🌲🌲🌲🌲</h3>
+               
+                <p>Had a beautiful trip here. I made a trip to the Tetons in late July and the weather was beautiful. Rode on three different days and not a drop of rain. Nice cool mornings and evenings with warm days. Would defintely recommend to a friend.</p>
+                <button class="like">Like</button> <button class="dislike"> Dislike</button>
+                
+            </div>
+
+            <div class="comment">
+                <h3>Lindsay Malloy: 🌲🌲</h3>
+               
+                <p>Did not have a good time at all. #angry</p>
+                <button>Like</button> <button>Dislike</button>
+                
+            </div>
+            
+        </div>
+
+        <div>
+            <p><a href="activities.html" class="previous"> &laquo; Previous</a></p>
+        </div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script>
+            $(".like").on("click", function() {
+                alert("LIKED 👍")
+            });
+            $(".dislike").on("click", function() {
+                alert("DISLIKED 👎")
+            });
+        </script>
+
+        
+
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
